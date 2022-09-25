@@ -446,9 +446,8 @@
                 <p class="form-title">Підпишіться на розсилку</p>
                 <div class="form-btn">
                     <form class="form">
-                        <label>
-                            <input class="footer-input" type="email" name="email" placeholder="E-mail">
-                        </label>
+                        <label for="email"></label>
+                        <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail"> 
                     </form>
                     <button class="footer-btn" type="submit">
                         Підписатися
@@ -467,6 +466,42 @@
                     <use href="./img/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+                <div class="form-field">
+                    <label for="name">Ім'я</label>
+                    <svg width="18" height="18">
+                        <use href="./img/icons.svg#icon-person-black"></use>
+                    </svg>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <svg width="18" height="18">
+                        <use href="./img/icons.svg#icon-phone-black"></use>
+                    </svg>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div class="form-field">
+                    <label for="email">Пошта</label>
+                    <svg width="18" height="18">
+                        <use href="./img/icons.svg#icon-email-black"></use>
+                    </svg>
+                    <input type="email" name="email" id="email">
+                </div>
+               <div class="comment-field">
+                <label for="comment">Коментар</label>
+                <textarea name="comment" id="comment" rows="4" placeholder="Введіть текст"></textarea>
+               </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                </div>        
+                <div class="submit-btn">
+                    <button type="submit" class="btn">Відправити</button>
+                </div>       
+                
+            </form>
     
         </div>
     </div>
