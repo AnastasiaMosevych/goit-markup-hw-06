@@ -903,12 +903,16 @@ img {
 .footer-input {
     display: flex;
 
-    background-color: var(--secondary-background-color);
+    min-width: 358px;
+    height: 100%;
+
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    min-width: 358px;
-    height: 100%;
+
+    background-color: var(--secondary-background-color);
+    color: var(--white);
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
